@@ -1,0 +1,8 @@
+4 Prices
+
+Children: 0
+Teenager: 15
+Adult: 25
+Concession: 20
+
+lambda will take in one age and return the price

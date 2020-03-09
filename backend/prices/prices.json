@@ -1,0 +1,24 @@
+{
+  "data": {
+    "child": {
+      "minimumAge": 0,
+      "maximumAge": 13,
+      "price": 0
+    },
+    "teenager": {
+      "minimumAge": 13,
+      "maximumAge": 18,
+      "price": 15
+    },
+    "adult": {
+      "minimumAge": 18,
+      "maximumAge": 60,
+      "price": 25
+    },
+    "consession": {
+      "minimumAge": 60,
+      "maximumAge": 101,
+      "price": 20
+    }
+  }
+}
