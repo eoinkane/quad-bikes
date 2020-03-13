@@ -88,7 +88,7 @@ class EditPricesComponent extends React.Component /*<
                 if (edit.name !== "price") {
                   alert("You can only edit the price currently");
                   return false;
-                } else if ((typeof (parseInt(edit.new_value))) !== typeof 10) {
+                } else if (typeof parseInt(edit.new_value) !== typeof 10) {
                   alert("You can only input a number");
                   return false;
                 } else {
@@ -116,7 +116,7 @@ class EditPricesComponent extends React.Component /*<
                 axios
                   .post(
                     "https://ykf45oytvf.execute-api.us-east-1.amazonaws.com/dv/quad-bikes/edit/prices",
-                    JSON.stringify(this.state.data)
+                    this.state.data
                   )
                   .then(() => {
                     this.setState({ position: "posting succeeded" });
